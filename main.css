@@ -188,3 +188,13 @@ button i{
 button:hover{
     cursor: pointer;
 }
+
+@media screen and (max-width:850px) {
+    #content{ width: 100%; }
+    header h1{ font-size: 3rem; text-align: center; text-shadow: 0 0 0; margin-bottom: 0.5em; }
+    h3{ font-size: 2rem; }
+    nav{ text-align: center;}
+    .sitenav .list-item{ display: block; }
+    main{ padding: 1.5em; }
+    .project{ width: 100%; }
+}
