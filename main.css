@@ -1,0 +1,190 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* start regular css */
+
+body{
+    background: #f4f4f4;
+    color: #222;
+    line-height: 150%;
+    font-family: "Dejavu Sans", Arial, Helvetica, sans-serif;
+    font-size: 12.5pt;
+}
+
+.dark-mode{
+    background: #282828;
+    color: #f4f4f4;
+}
+
+.dark-mode header h1{ text-shadow: 1px 1px 0 #282828, 1px 0 0 #282828, -1px -1px 0 #282828, -1px 0 0 #282828; }
+.dark-mode nav{ background: #f4f4f4; }
+.dark-mode .sitenav .list-item a{ color: #282828; }
+.dark-mode b, .dark-mode strong, 
+.dark-mode i, .dark-mode em, 
+.dark-mode u, .dark-mode a, 
+.dark-mode a:link, .dark-mode a:visited{ color: #e5ac00; }
+.dark-mode .accent{ color: #e5ac00 !important; }
+.dark-mode .project{ background: #e5ac00; }
+.dark-mode .section-divider .bi{ color: #f4f4f4; font-size: 1.5em; }
+.dark-mode button{ background: #f4f4f4 !important; }
+.dark-mode button i{ color: #282828; }
+
+
+#content{
+    width: 800px;
+    margin: 3em auto;
+}
+
+header h1{
+    font-size: 65pt;
+    line-height: 0.6;
+    text-shadow: 1px 1px 0 #fff, 1px 0 0 #fff, -1px -1px 0 #fff, -1px 0 0 #fff;
+    font-weight: bold;
+}
+
+h1, h3, .project{
+    font-family: Baskerville, serif;
+}
+
+nav{
+    background: #222;
+    text-align: right;
+    font-size: 18pt;
+}
+
+.sitenav .list-item{
+    display: inline-block; 
+    padding: 1em;
+}
+
+.sitenav .list-item a{
+    color: #fff;
+}
+
+section{
+    margin: 1em 0;
+}
+
+.section-divider{
+  text-align: center;
+  margin: 1em 0;
+}
+
+.section-divider .bi{ color: #222; font-size: 1.5em; }
+
+.project{
+    background: #8938a9;
+    color: #f4f4f4 !important;
+    display: block;
+    padding: 1em;
+    font-size: 18pt;
+    text-align: center;
+    margin: 1em auto;
+    width: 60%;
+}
+
+.project:hover{
+    background: #222;
+    color: #f4f4f4 !important;
+}
+
+h3{
+    font-size: 28pt;
+    margin: 0 0 0.5em 0;
+    font-weight: bold;
+}
+
+b, strong{ font-weight: bold; }
+i, em{ font-style: italic; }
+
+b, strong, i, em, u, a, a:link, a:visited{ color: #8938a9; }
+.accent{ color: #8938a9 !important;}
+
+
+p{ margin: 1em 0; }
+p:first-child{ margin-top: 0; } p:last-child{ margin-bottom: 0; }
+
+#dark-mode-toggler{
+    right: 1.5em;
+    bottom: 1.5em;
+    position: fixed;
+    color: #f4f4f4 !important;
+}
+
+#dark-mode-toggler button{
+    background: #282828;
+    color: #f4f4f4 !important;
+    font-size: 2.5rem;
+    border: 0;
+    padding: 0.25em .35em;
+    border-radius: .5em;
+}
+
+#dark-mode-off, #dark-mode-on{
+    display: none;
+}
+
+.show{
+    display: block !important;
+}
+
+button i{
+    color: #f4f4f4;
+}
+
+button:hover{
+    cursor: pointer;
+}
